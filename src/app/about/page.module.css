@@ -1,0 +1,21 @@
+.page {}
+.hero {
+  background: var(--earth-pale);
+  padding: 5rem 2rem;
+  text-align: center;
+  border-bottom: 1px solid var(--border);
+}
+.title { font-size: clamp(2.5rem, 5vw, 4rem); color: var(--ink); }
+.sub {
+  font-size: 1.1rem;
+  color: var(--muted);
+  margin-top: 0.75rem;
+  max-width: 500px;
+  margin-inline: auto;
+}
+.inner { max-width: 720px; margin: 0 auto; padding: 4rem 2rem; }
+.prose { display: flex; flex-direction: column; gap: 1.25rem; }
+.prose h2 { font-size: 1.5rem; color: var(--ink); margin-top: 1rem; }
+.prose p { font-size: 1rem; color: var(--muted); line-height: 1.9; }
+.prose ul { padding-left: 1.5rem; display: flex; flex-direction: column; gap: 0.6rem; }
+.prose li { font-size: 1rem; color: var(--muted); line-height: 1.7; }
