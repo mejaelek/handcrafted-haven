@@ -1,0 +1,10 @@
+.page {}
+.hero { background: var(--charcoal); padding: 5rem 2rem; text-align: center; }
+.heroTitle { font-size: clamp(2rem, 5vw, 3.5rem); color: var(--cream); }
+.heroSub { color: rgba(250, 247, 242, 0.6); font-size: 1.05rem; margin-top: 0.75rem; }
+.inner { max-width: 1200px; margin: 0 auto; padding: 4rem 2rem; }
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
