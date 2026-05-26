@@ -1,0 +1,54 @@
+.card {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  transition: box-shadow 0.3s;
+}
+.card:hover { box-shadow: var(--shadow-md); }
+.cover {
+  position: relative; height: 120px; background: var(--cream-dark);
+}
+.coverImg { object-fit: cover; }
+.body {
+  padding: 0 1.5rem 1.5rem;
+  display: flex; flex-direction: column; gap: 0.4rem;
+}
+.avatarWrap {
+  margin-top: -36px; margin-bottom: 0.5rem;
+}
+.avatar {
+  border-radius: 50%;
+  border: 3px solid var(--white);
+  object-fit: cover;
+}
+.name {
+  font-size: 1.1rem; font-weight: 700; color: var(--ink);
+}
+.name:hover { color: var(--earth); }
+.specialty {
+  font-size: 0.8rem; letter-spacing: 0.05em; text-transform: uppercase;
+  color: var(--earth); font-weight: 600;
+}
+.location { font-size: 0.8rem; color: var(--muted); }
+.bio { font-size: 0.875rem; color: var(--muted); line-height: 1.5; margin: 0.25rem 0; }
+.stats {
+  display: flex; gap: 1.5rem;
+  padding: 0.75rem 0;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  margin: 0.5rem 0;
+}
+.stat { display: flex; flex-direction: column; align-items: center; flex: 1; }
+.stat strong { font-size: 1.1rem; font-weight: 700; color: var(--ink); }
+.stat span { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--muted); }
+.cta {
+  display: block; text-align: center;
+  padding: 0.65rem;
+  background: var(--earth-pale);
+  color: var(--earth);
+  font-size: 0.875rem; font-weight: 600; letter-spacing: 0.03em;
+  border-radius: var(--radius-sm);
+  transition: background 0.2s, color 0.2s;
+}
+.cta:hover { background: var(--earth); color: var(--cream); }

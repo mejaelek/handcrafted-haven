@@ -1,0 +1,52 @@
+.card {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  transition: box-shadow 0.3s, transform 0.3s;
+}
+.card:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-3px);
+}
+.imageWrap {
+  display: block; position: relative;
+  aspect-ratio: 1 / 1; overflow: hidden;
+  background: var(--cream-dark);
+}
+.image {
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+.card:hover .image { transform: scale(1.04); }
+.badge {
+  position: absolute; top: 12px; right: 12px;
+  background: var(--charcoal); color: var(--cream);
+  font-size: 0.7rem; font-weight: 700; letter-spacing: 0.08em;
+  text-transform: uppercase; padding: 4px 10px;
+  border-radius: var(--radius-sm);
+}
+.body { padding: 1rem 1.25rem 1.25rem; }
+.sellerName {
+  font-size: 0.75rem; letter-spacing: 0.05em;
+  text-transform: uppercase; color: var(--muted);
+  margin-bottom: 0.3rem;
+}
+.name {
+  font-size: 1rem; font-weight: 600;
+  color: var(--ink); line-height: 1.3;
+  margin-bottom: 0.75rem;
+  transition: color 0.2s;
+}
+.name:hover { color: var(--earth); }
+.meta {
+  display: flex; justify-content: space-between; align-items: center;
+}
+.rating { display: flex; align-items: center; gap: 0.35rem; }
+.stars { color: var(--earth-light); font-size: 0.85rem; letter-spacing: 1px; }
+.reviewCount { font-size: 0.75rem; color: var(--muted); }
+.price {
+  font-family: 'Palatino Linotype', serif;
+  font-size: 1.1rem; font-weight: 700;
+  color: var(--earth);
+}

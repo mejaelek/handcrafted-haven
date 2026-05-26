@@ -1,0 +1,77 @@
+.header {
+  position: sticky; top: 0; z-index: 100;
+  background: rgba(250,247,242,0.95);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border);
+}
+.inner {
+  max-width: 1200px; margin: 0 auto;
+  padding: 0 2rem;
+  height: 70px;
+  display: flex; align-items: center; gap: 2rem;
+}
+.logo {
+  display: flex; align-items: center; gap: 0.75rem;
+  text-decoration: none; flex-shrink: 0;
+}
+.logoMark {
+  font-size: 1.75rem; color: var(--earth);
+  line-height: 1;
+}
+.logoText {
+  font-family: 'Palatino Linotype', Palatino, serif;
+  font-size: 1rem; line-height: 1.2;
+  color: var(--ink); font-weight: 700;
+}
+.logoText em { font-style: italic; color: var(--earth); font-weight: 400; }
+.nav {
+  display: flex; align-items: center; gap: 0.25rem;
+  margin-left: auto;
+}
+.navLink {
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem; letter-spacing: 0.04em;
+  color: var(--muted);
+  border-radius: var(--radius-sm);
+  transition: color 0.2s, background 0.2s;
+}
+.navLink:hover { color: var(--ink); background: var(--cream-dark); }
+.actions {
+  display: flex; align-items: center; gap: 0.75rem;
+  flex-shrink: 0;
+}
+.btnGhost {
+  padding: 0.5rem 1.1rem;
+  font-size: 0.875rem; letter-spacing: 0.03em;
+  color: var(--charcoal);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  background: transparent;
+  transition: border-color 0.2s, background 0.2s;
+}
+.btnGhost:hover { background: var(--cream-dark); border-color: var(--muted); }
+.btnPrimary {
+  padding: 0.5rem 1.25rem;
+  font-size: 0.875rem; font-weight: 600; letter-spacing: 0.03em;
+  color: var(--cream);
+  background: var(--earth);
+  border-radius: var(--radius-sm);
+  transition: background 0.2s;
+}
+.btnPrimary:hover { background: var(--charcoal); }
+.burger {
+  display: none; flex-direction: column; gap: 5px;
+  background: none; border: none; padding: 6px; cursor: pointer;
+}
+.burger span {
+  display: block; width: 22px; height: 2px;
+  background: var(--charcoal); border-radius: 2px;
+  transition: transform 0.2s;
+}
+@media (max-width: 768px) {
+  .nav { display: none; }
+  .navOpen { display: flex; flex-direction: column; position: absolute; top: 70px; left: 0; right: 0; background: var(--cream); padding: 1rem 2rem; border-bottom: 1px solid var(--border); gap: 0.5rem; }
+  .burger { display: flex; }
+  .btnGhost { display: none; }
+  .inner { gap: 1rem; }
+}
